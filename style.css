@@ -1,0 +1,39 @@
+html,
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Lato', 'Arial', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+div, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+nav {
+  background-color: #3296AE;
+  color: #FAFCFC;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Lato', 'Open Sans', arial, sans-serif;
+  font-weight: 300;
+  font-style: light;
+  font-size: 200%;
+}
+.container-full {
+  width: 100vw;
+}
+.container {
+  width: 80vw;
+  background-color: #eee;
+}
