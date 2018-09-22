@@ -10,7 +10,8 @@ body {
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
-div, h1, h2, h3, h4, h5, h6 {
+
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0 1em;
 }
@@ -18,7 +19,7 @@ div, h1, h2, h3, h4, h5, h6 {
 nav {
   background-color: #3296AE;
   color: #FAFCFC;
-  height: 100px;
+  height: 10em;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -30,13 +31,18 @@ h1 {
   font-weight: 300;
   font-size: 260%;
   letter-spacing: 0.05em;
+  padding: 0.5em;
 }
 
 h2 {
   margin-top: 1em;
   font-family: 'Lato', 'Open Sans', arial, sans-serif;
-  font-weight: 300;
-  font-size: 200%;
+  font-weight: 400;
+  font-size: 150%;
+  font-style: oblique;
+  color: #555;
+  padding: 1.5em;
+  line-height: 1.3;
 }
 
 a {
@@ -53,23 +59,23 @@ a:hover {
 }
 
 .container {
-  width: 80vw;
+  width: 100vw;
   height: auto;
   background-color: #eee;
 }
 
 .row {
   display: flex;
-  width: 80vw;
+  /*width: 80vw;*/
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .card {
-  margin: 1em;
-  padding 1em;
+  margin: 1em 1em 2em 1em;
+  padding: 1em;
   background-color: #d5b8ff;
-  width: 15em;
+  width: 60vw;
   height: 5em;
   display: flex;
   align-items: center;
@@ -82,4 +88,38 @@ a:hover {
 
 .card:hover a {
   color: white;
+}
+
+.join {
+  background-color: #fff;
+}
+
+#join {
+  background-color: #81cfe0;
+}
+
+#join:hover {
+  background-color: #3a539b;
+}
+
+.resources {
+  background-color: #eee
+}
+
+#checkin {
+  margin-bottom: 5em;
+}
+
+
+
+
+/* Small phones to small tablets: from 481px to 767px */
+/* Width of ipad at the time was 768px, so targeting phones smaller than the ipad*/
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100vw;
+  }
+  .card {
+    width: 80vw;
+  }
 }
