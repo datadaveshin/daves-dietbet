@@ -96,6 +96,7 @@ a:hover {
 }
 
 #join {
+  margin: 0;
   background-color: #81cfe0;
 }
 
@@ -103,8 +104,17 @@ a:hover {
   background-color: #3a539b;
 }
 
+.join-row {
+  background-color: #fff;
+}
+
 .resources {
-  background-color: #eee
+  background-color: #eee;
+}
+
+.resources p {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 #checkin {
@@ -119,8 +129,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 249, 222, 0.3);
+  background-color: #e8ecf1;
   width: 100vw;
+  margin-top: 3em;
 }
 
 
